@@ -1,4 +1,39 @@
 body {
     margin: 0;
+    font-family: Inter, sans-serif;
     background-color: aquamarine;
+}
+
+.navbar {
+    margin-left: 5%;
+    margin-right: 5%;
+    /* border: 5px solid black; */
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.logo {
+    /* border: 5px solid orangered; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo-img {
+    width: 50px;
+}
+
+.logo-text {
+    margin-left: 5%;
+    font-size: 32px;
+    color: dodgerblue;
+    /* font-weight: 700; */
+}
+
+.title {
+    /* border: 5px solid orangered; */
+    font-size: 24px;
+    color: yellow;
+    /* font-weight: 600; */
 }
