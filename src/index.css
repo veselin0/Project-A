@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: Inter, sans-serif;
-    background-color: aquamarine;
+    background-color:gray
 }
 
 .navbar {
@@ -39,11 +39,12 @@ body {
     /* font-weight: 600; */
 }
 
-.main {margin-left: 5%;
-    /* display: flex;  */
-    /* flex-direction: column; */
-    /* align-items: center ; */
-    /* justify-content: center; */
+.main {
+    margin-left: 5%;
+    background-image: url(../public/react-icon-large.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
  }
 
  .main-title {
@@ -55,4 +56,9 @@ body {
      font-size: 42px;
      color: rgb(255, 145, 0);
      max-width: 800px;
+ }
+
+ .main-list > li::marker {
+     color: dodgerblue;
+     font-size: 4rem;
  }
