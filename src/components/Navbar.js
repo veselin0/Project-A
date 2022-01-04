@@ -1,12 +1,21 @@
-const Navbar = () => {
+
+
+const Navbar = (props) => {
     return (
-        <div className="navbar">
-            <div className="logo">
-                <img className="logo-img" src="./react-logo.png" alt="logo" />
-                <h3 className="logo-text">ReactFacts</h3>
+        <nav className={props.darkMode ? "dark" : ""}>
+            
+                <img className="nav--logo_icon" src="./images/react-icon-small.png" alt="logo" />
+                <h3 className="nav--logo_text">ReactFacts</h3>
+            
+            <div className="toggler">
+                <p className="toggler--light">Light</p>
+                <div className="toggler--slider"
+                onClick={props.toggleDarkMode}>
+                    <div className="toggler--slider--circle"></div>
+                </div>
+                <p className="toggler--dark">Dark</p>
             </div>
-            <h4 className="title">React Course - Project 1</h4>
-        </div>
+        </nav>
     );
 };
 
